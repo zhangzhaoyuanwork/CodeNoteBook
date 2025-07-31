@@ -10,7 +10,6 @@
 *   `git init --bare`: 在当前目录初始化一个新的Git裸库(不带工作区,用于远程库创建)。
 *   `git config`: 设置Git的配置项，全局配置信息保存在\~/.gitconfig文件中。
     *   `git config [--global] --list`: 显示当前配置。
-    *   `git config [--global] -e`: 编辑配置文件。
     *   `git config [--global] user.name "[name]"`: 设置提交用户名。
     *   `git config [--global] user.email "[email]"`: 设置提交用户邮箱。
 
@@ -18,9 +17,8 @@
 
 *   `git add <file>`: 将指定文件添加到暂存区。
 *   `git add .` 或 `git add -A`: 添加所有修改（包括新建、修改和删除的文件）到暂存区。
-*   `git rm <file>`: 从工作区和暂存区移除文件。
+*   `git restore <file>`: 丢弃工作区的改动
 *   `git rm --cache <file>`: 从暂存区移除文件。
-*   `git mv <old> <new>`: 移动或重命名文件，并更新暂存区。
 
 ### 提交与历史查询
 
