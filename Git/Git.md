@@ -23,7 +23,7 @@
 ### 提交与历史查询
 
 *   `git commit -m "[message]"`: 提交暂存区的改动，附带提交消息。
-*   `git commit --amend`: 修改最后一次提交。
+*   `git commit --amend -m "[message]"`: 修改最后一次提交。
 *   `git status`: 查看工作区和暂存区的状态。
 *   `git status -s`: 查看工作区和暂存区的简短状态。
 *   `git diff`: 显示工作区与暂存区的差异。

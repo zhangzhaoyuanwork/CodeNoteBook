@@ -168,20 +168,19 @@
 
 在DOS/命令提示符环境中，批处理文件（`.bat`）中使用注释的方法如下：
 
-*   **`REM` 或 `::`**:
-    *   作用：在批处理文件中添加注释，注释内容将被命令解释器忽略，不会被执行。
+*   **`REM` 或`@REM`或 `::`**:
+    *   作用：在批处理文件中添加注释，注释内容将被命令解释器忽略，不会被执行。`REM`和`@REM`的区别在于，`@REM`不会在执行时显示注释内容，而`::`是另一种注释方式，利用语法漏洞实现注释，效果与`REM`相同。
     *   语法：
         ```batch
         REM 注释内容
+        @REM 注释内容
         :: 注释内容
         ```
     *   示例：
         ```batch
-        REM This is a comment explaining the following command
-        dir /B
-
-        :: Display system date and time
-        echo %date% %time%
+        REM 注释内容
+        @REM 注释内容
+        :: 注释内容
         ```
 
 
